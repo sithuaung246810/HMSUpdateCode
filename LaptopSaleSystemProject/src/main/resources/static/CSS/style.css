@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+        :root{
+            --primary-color: hsl(330,87%,17%);
+            --secondary-color: hsla(203,100%,13%,1);
+        }
+
+        body{
+            font-family: 'Source Sans Pro', sans-serif;
+            width: 100%;
+            background-color: #f1fdfb;
+            margin: 0;
+        }
+        main{
+        	
+        	background-color: #f1fdfb;
+        }
+
+        /* Start Header */
+        header {
+            background-position: center;
+            background-attachment: fixed;
+            margin-top: 80px;
+            position: relative;
+            
+        }
+
+.navbar {
+            background: linear-gradient(rgba(0,0,0,0.6),var(--secondary-color));
+            padding: 10px 20px;
+            transition: all .7s;
+            color: white;    
+        }
+
+        .navmenus {
+            background: linear-gradient(rgba(0,0,0,0.6),var(--secondary-color));
+            padding: 5px 30px;
+            color: white;
+        }
+
+        .menuitems {
+            color: #eeee;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .menuitems:hover {
+            color: lightblue;
+        }
+
+        .menuitems .nav-tag {
+            overflow: hidden;
+        }
+
+        .lines1, .lines2, .lines3 {
+            width: 25px;
+            height: 3px;
+            margin: 6px;
+            transition: all .5s;
+        }
+
+        .crossxs .lines1 {
+            transform: rotate(-60deg) translate(-2px,2px);
+        }
+
+        .crossxs .lines2 {
+            opacity: 0;
+        }
+
+        .crossxs .lines3 {
+            transform: rotate(60deg) translate(-2px,-2px);
+        }
+
+        .navbar-nav {
+            position: relative;
+            display: flex;
+        }
+
+        .navbar-nav li.active {
+            color: white;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 20%;
+            background-color: transparent;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px 10px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid #444;
+        }
+
+        .dropdown-content a:hover {
+            background-color: skyblue;
+        }
+
+        .loginbtn {
+            font-size: 38px;
+            color: #eeee;
+        }
+
+        .avatarNav {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        #cart {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+
+        .cart-badge {
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 8px;
+            font-size: 14px;
+            position: absolute;
+            top: 10px;
+            right: 1px;
+            transform: translate(50%, -50%);
+            display: inline-block;
+        }
+        
+        /* Profile Card Styling */
+.profile-card {
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 70px;
+  
+}
+
+.profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+        .avatarNav img {
+            width: 100%;
+            height: 100%;  
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .avatarNav i {
+            font-size: 40px;
+        }
+
+        .avatarNav-initial {
+            font-size: 22px;
+            font-weight: bold;
+            color: #eeee;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            margin-top: 0px;
+        }
+        .avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+   background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #555;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+
+  
+}
+
+.avatar-initial {
+  font-size: 40px;
+  margin-top: 15px;
+  color: #fff;
+   background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.btnedit {
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+	width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#edit{
+    font-size: 20px;
+    color:blue !important;
+}
+
+.profile-body {
+  margin-top: 20px;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+   text-transform: none;
+}
+
+.sync-status {
+  margin-top: 10px;
+}
+
+.sync-status button {
+ background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0;
+}
+
+.sync-status button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sync-status small {
+  display: block;
+  color: red;
+}
+
+
+.sync-status button:hover{
+  transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(110, 69, 226, 0.5);
+    background: #88d3ce;
+    
+}
+
+.sync-status button a:hover {
+	color: white;
+	font-weight: bold;
+	}
+
+        .nav-link {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #eeee;
+            position: relative;
+        }
+
+        .nav-link.active {
+            color: steelblue !important;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav-link.active::before {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: steelblue;
+        }
